@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <h1>Postni o'chirish</h1>
+  <from action="" method="post">{% csrf_token %}
+      <p>"{{ post.title }}" postni o'chiraymi? </p>
+      <input type="submit" value="O'chirish">
+  </from>
+{% endblock content %}
